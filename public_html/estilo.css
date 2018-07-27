@@ -1,0 +1,176 @@
+
+html  {
+    font-size: 16px; 
+}
+body{
+    margin: 15px;
+    padding: 0px;
+    background:#f0f0f0; 
+    
+}
+div{
+    margin: auto;
+    margin-right: 200px;
+    margin-left: 200px;
+   
+}
+h1 {
+    
+        font-family:small-caps  serif;
+	font-size:50px;
+        color: black;
+        text-align: center;
+        
+        border-top: 4px double #cc3300;
+         
+        border-bottom: 4px double #cc3300;
+        
+        
+}
+h2 {
+    font-family:cursive;
+	font-size:20px;	
+        color: black;
+        text-align: center;
+        
+        border-top: 4px double #cc3300;
+         
+        border-bottom: 4px double #cc3300;
+       
+}
+
+.logo:hover {
+    transition:all .9s ease-in-out;
+    transform: rotateY(360px,0);
+    -webkit-transform: rotateY(360deg);
+
+}
+header menu footer{
+    width: 900px;
+    margin: auto;
+}
+
+.menu{
+    
+    height:  91px;
+    margin-top: -12px;
+    margin-left: -20px;
+    margin-right: -15px;
+    background-color: #006699;
+}
+.menu ul{
+    list-style: none;
+     margin: 0px;  
+     padding: -30px;
+     
+}
+.menu ul li{
+    float: right;
+}
+.menu ul li a {/*  */
+    text-decoration:none;
+    color: beige;
+    line-height: 60px; 
+    padding: 5px 30px ;
+    display: block;
+}
+.menu ul li a:hover {
+    background-color:#33ffff;
+   
+}
+
+.limpiar{
+    clear: both;
+}
+.logo{
+    padding: 0px 9px ;
+    float: left;
+    
+}
+
+/* estilo del slider */
+.slider{
+    width: 100%  ; 
+    
+    margin: auto;/* para que este centrado el slider */
+    overflow: hidden;/*no muestra las imagenes que estan al lado  */
+}
+.slider ul{
+    display: flex;/* para poner las fotos todas al lado */
+    padding: 0;/* saque borde  */
+    width: 400%;/*ancho de la imagen  */
+    height: 00%;
+   
+    
+    animation: cambio 20s infinite;/* e q hce q cambie la imag */
+    animation-direction: alternate;/*p q la ultima vuelva a la primera  */
+    /*animation-timing-function: para las transacciones*/
+}
+.slider li{
+    width: 100%;
+    list-style: none;/*saco los punto de cada foto  */
+}
+.slider img{
+    
+    width: 100%;
+    
+}
+@keyframes cambio{ 
+    
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left:-100%;}
+    45% {margin-left:-100%;}
+    
+    50% {margin-left:-200%;}
+    70% {margin-left:-200%;}
+    
+    75% {margin-left:-300%;}
+    100% {margin-left:-300%;}
+}
+/*stylo para barra social  */
+.social-bar {
+   position: fixed;/*para que quede fijo en la pantalla  */ 
+   left: -34;/*a la derecha  */
+   top: 450px;/*posicionamos en el centro  */
+   margin-left: -52px;
+  
+   z-index: 200;/*indicamos que ponga encima de los otro elem  */
+}
+.social-bar ul {
+    list-style: none;
+}
+.social-bar ul li a {
+    display: inline-block;
+    color: beige;
+    background: #000;
+    padding: 14px 20px;
+    text-decoration: none;
+    
+    border-radius: 1rem 0 0 0;
+    
+    
+   /*transición */
+   -webkit-transition: all 500ms ease;
+   -o-transition: all 500ms ease;
+   transition: all 500ms ease;
+}
+
+.social-bar ul li .icon-paper-plane{
+    background:pink;
+    
+}
+.social-bar ul li .icon-facebook{
+    background: #3b59998;
+    
+}
+.social-bar ul li .icon-youtube{
+    background:red;
+    
+}
+/*movimiento de la barra  */
+.social-bar ul li a:hover{
+    padding: 14px 35px;
+    background: black;
+}
