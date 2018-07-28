@@ -3,17 +3,12 @@ html  {
     font-size: 16px; 
 }
 body{
-    margin: 15px;
+    margin: 0px;
     padding: 0px;
     background:#f0f0f0; 
     
 }
-div{
-    margin: auto;
-    margin-right: 200px;
-    margin-left: 200px;
-   
-}
+
 h1 {
     
         font-family:small-caps  serif;
@@ -21,9 +16,9 @@ h1 {
         color: black;
         text-align: center;
         
-        border-top: 4px double #cc3300;
+       /* border-top: 4px double #cc3300;*/
          
-        border-bottom: 4px double #cc3300;
+       /*border-bottom: 4px double #cc3300;  */ 
         
         
 }
@@ -32,12 +27,10 @@ h2 {
 	font-size:20px;	
         color: black;
         text-align: center;
-        
-        border-top: 4px double #cc3300;
-         
-        border-bottom: 4px double #cc3300;
+       
        
 }
+
 
 .logo:hover {
     transition:all .9s ease-in-out;
@@ -173,4 +166,8 @@ header menu footer{
 .social-bar ul li a:hover{
     padding: 14px 35px;
     background: black;
+}
+.videopre{
+    left: 500px;
+    
 }
