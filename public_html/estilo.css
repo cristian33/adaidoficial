@@ -7,6 +7,7 @@ body{
     padding: 0px;
     background:#f0f0f0; 
     
+    
 }
 
 h1 {
@@ -168,6 +169,8 @@ header menu footer{
     background: black;
 }
 .videopre{
-    left: 500px;
+    margin-left: 450px;
+    margin-right: 650px;
+   
     
 }
